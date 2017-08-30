@@ -1,0 +1,16 @@
+    <div class="tekst" style="background-color:#3D3D3D; border:1px solid #B2C930;  margin-bottom:30px; padding: 20px; border-radius: 10px; height:250px;" model-id="{{id}}">
+		<div style="text-align:justify; margin-bottom:15px; height:130px; ">
+		<span style="color: white;"><strong style="color:#B2C930"> Name : </strong> {{ name }}</span><br><br>
+		<span style="color: white;"><strong style="color:#B2C930" > Genre : </strong> {{ genre }}</span><br><br>
+		<span style="color: white;"><strong style="color:#B2C930" > Year : </strong> {{ year}}</span><br><br>
+		<div class="rented" style="border:1px solid red; height:20%; width:100%; text-align:center; color:red; font-size: 100%; border-radius: 5px; "></div>
+		</div>
+		
+			<div class="buttons2" style="text-align:center; position:relative; margin-bottom:2px; ">
+				<span>
+					<a href="/editMovie/{{id}}" class="button red edit" style="margin-top:10px; margin-right: 1.5em;" >EDIT </a>
+					<a class="button blue delete" > DELETE </a>
+					{{!--<a class="test button blue" atribut="vrijednost">test</a>--}}
+				</span>
+			</div>
+	</div>

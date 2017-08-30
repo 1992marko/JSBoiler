@@ -1,0 +1,31 @@
+<div class="dialog">
+	<div class="window">
+		<h1 class="title blue thin mt-0">{{title}}</h1>
+		
+		<p>Klikom na Potvrdi slažete se da otkazujete rezervaciju i prihvaćate eventualne troškove otkaza prema donjoj tablici. Otkaz rezervacije se nakon toga obrađuje automatski kao i eventualni povrat novaca.</p>
+
+		{{#if data.Cancellations.Cancellation}}
+			<h6 class="title blue">Troškovi otkaza</h6>
+			<ul class="list cancelations">
+				
+				{{#each data.Cancellations.Cancellation}}
+					<li>Trošak <span class="red">{{this.Penalty}} {{../data.CurrencyCode}} </span> od <span class="red">{{this.PenaltyApplicableFrom}}</span></li>
+				{{/each}}
+			
+			</ul>
+		{{else}}
+			<p>Nema troškova otkazivanja</p>
+		{{/if}}
+
+		{{#if errorMessage}}
+			<p class="error-message">{{errorMessage}}</p>
+		{{/if}}
+		<p id="message" class="mb-0">{{message}}</p>
+		{{#if requestMessage}}
+			<textarea id="requestMessage" class="requestMessage"></textarea>
+		{{/if}}
+
+		<a id="ok" class="button yellow">Otkaži</a>
+		<a id="cancel" class="button yellow">Natrag na rezervacije</a>
+	</div>
+</div>

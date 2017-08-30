@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+
+		<hr>
+		<a href="/auti">natrag</a>
+		<hr> {{#if ID}}
+		<div class="col-sm-4">
+			<h1>{{ime}}</h1>
+			<a href='/auto/{{ID}}'>
+					<img src="{{slika}}" class="img-responsive">
+				</a>
+			<h4>{{boja}}</h4>
+			<p id="marko">Ja sam Marko<p>
+		</div>
+		{{else}} Nemam auto !! {{/if}}
+
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="dialog">
+	<div class="window">
+		<h1 class="title blue thin mt-0">{{title}}</h1>
+		<p id="message">{{message}}</p>
+
+		{{#if errorMessage}}
+			<p class="error-message">{{errorMessage}}</p>
+		{{/if}}
+
+		{{#if requestMessage}}
+			<textarea id="requestMessage" class="requestMessage"></textarea>
+		{{/if}}
+
+		<a id="ok" class="button yellow">Ok</a>
+		<a id="cancel" class="button yellow">Cancel</a>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/907312fefde8525bba815f49dd754d5b1bab2135/backbone.marionette/index.d.ts",
+    "raw": "registry:dt/backbone.marionette#0.0.0+20161220140445",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/907312fefde8525bba815f49dd754d5b1bab2135/backbone.marionette/index.d.ts"
+  }
+}

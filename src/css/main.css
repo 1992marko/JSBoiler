@@ -1,0 +1,268 @@
+@import "normalize";
+@import "libs/swiper.min.css";
+@import "framework";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+}
+
+b,
+strong {
+	color: #333;
+	font-weight: bold;
+}
+
+
+/*Titles*/
+
+.title {
+	line-height: 1.2;
+}
+
+.title span {
+	display: block;
+	font-family: 'Roboto', Helvetica, sans-serif !important;
+	font-size: 0.5em;
+	font-weight: 300;
+}
+
+.title.black {
+	color: #000;
+}
+
+.title.black span {
+	color: #666;
+}
+
+.title.blue {
+	color: #0066A2;
+}
+
+.title.blue span {
+	color: #666;
+}
+
+.title.thin {
+	font-weight: 100;
+}
+
+.title.small {
+	font-size: 1.0em;
+}
+
+h1.title span {
+	font-size: 0.5em;
+	font-weight: 300;
+}
+
+.title.white {
+	color: #FFF;
+}
+
+.title.yellow {
+	color: #FFCD03;
+}
+
+.title.green {
+	color: #17C78C;
+}
+
+.title.underline {
+	border-bottom: 1px solid #eee;
+	padding-bottom: .47em;
+}
+
+.title.price {
+	font-size: 2.4em;
+	color: #1d9c6d;
+	font-weight: 600;
+}
+
+.title.price span {
+	color: #146d60;
+}
+
+
+
+
+/* BUTTON */
+
+button {
+	position: relative;
+	border: none;
+	padding: 10px 20px;
+	transition: all 0.3s;
+	background-color: transparent;
+	text-align: center;
+	border-radius: 2px;
+}
+
+button[disabled] {
+	/*background-color: #BDBDBD !important;
+    color: #D6D6D6 !important;*/
+}
+
+button.loading {
+	color: transparent !important;
+	background-color: #333 !important;
+}
+
+button.loading:after {
+	content: url('data:image/svg+xml;utf8,<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:url(#XMLID_3_);stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}</style><linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="3.9823" y1="13.5647" x2="26.0177" y2="13.5647"><stop  offset="0" style="stop-color:#FFCD03"/><stop  offset="1" style="stop-color:#FFCD03"/></linearGradient><path id="XMLID_2_" class="st0" d="M22.5,21.7c1.6-1.8,2.5-4.1,2.5-6.7c0-5.5-4.5-10-10-10S5,9.5,5,15c0,2.8,1.1,5.3,3,7.1"/></svg>');
+	position: absolute;
+	opacity: 1;
+	left: 50%;
+	top: 50%;
+	margin-left: -15px;
+	margin-top: -15px;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	color: #FFF;
+	animation: ScaleIn1 2s infinite linear;
+}
+
+@keyframes ScaleIn1 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.header {
+	/*border: 1px solid black;*/
+	background-color: #3C4B62;
+}
+
+.menu {
+	float: right;
+	padding-right: 2em;
+	margin-right: 20%;
+	margin-top: 1em;
+	height: 100%;
+}
+
+.menu li {
+	color: black;
+}
+
+headerr {
+	background-color: #FFF;
+	/*border: 1px solid black;*/
+	border-bottom: #777;
+}
+
+.logo {
+	/*border: 1px solid black;*/
+	height: 90%;
+	width: 65%;
+	margin-top: 1em;
+}
+
+/*.logoo {
+	border: 1px solid black;
+	height: 90%;
+	width: 65%;
+	margin-top: 1em;
+}*/
+
+html {
+	height: 100%
+}
+
+body {
+	line-height: 1.231;
+	height: 100%;
+	color: black;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+	color: #FFF;
+	height: 100%
+}
+
+a.button-small {
+	padding: 3px 9px;
+	font-weight: 200;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.button1 {
+    background-color: #B2C930;
+    color: #3D3D3D;
+    border: 5px solid black;
+	border-radius: 10px;
+	width: 20em;
+}
+ .button1:hover{
+	 background-color: #b3b300
+
+ }
+
+
+.button2 {
+    background-color: #E0E0E0;
+    color: red;
+	font-weight: bold;
+    border: 5px solid black;
+	border-radius: 10px;
+	width: 60px;
+}
+
+.tekst{
+	background-image: url("http://go.simplepickup.com/img/section_3_icons/film.png");
+ 	background-repeat: no-repeat;
+    background-position: center; 
+
+}
+
+.tekst1{
+	background-image: url("http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/3d-transparent-glass-icons-business/076103-3d-transparent-glass-icon-business-pencil1.png");
+ 	background-repeat: no-repeat;
+    background-position: center; 
+
+}
+
+.marko{
+	background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/157511-200.png");
+ 	background-repeat: no-repeat;
+    background-position: center; 
+
+}
+
+.content{
+	background-color:#1F1F1F;
+	padding-top: 10em;
+	padding-bottom: 10em;
+}
+
+.footer{
+	background-color: #3D3D3D;
+	padding-top: 35px;
+
+}
+
+#content{
+	padding-bottom: 0px;
+
+}
+
+
